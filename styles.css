@@ -1,13 +1,21 @@
-.main{
-    /*background-color: aqua;*/
-    /*display: inline-block ;*/
-    position: relative;
-    width: 1440px;
-    height: 1024px;
-
+.main {
+    display: table;
+    width: 100%;
+}
+  
+.main section {
+    display: table-cell;
 }
 
-.campo-mensaje{
+.entrada{
+    background-color: aquamarine;
+}
+
+.salida{
+    background-color: grey;
+}
+
+#campo-mensaje{
     background-color: red;
   
     border-radius: 8px;
@@ -15,6 +23,10 @@
 }
 
 #texto-encriptado{
+    font-size: 40px;
+    font-weight: bold;
+    color: blue;
+    text-align: center;
     width: 700px
 }
 /* Encriptador - 1 Desktop */
