@@ -1,0 +1,23 @@
+.main{
+    /*background-color: aqua;*/
+    /*display: inline-block ;*/
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+
+}
+
+.campo-mensaje{
+    background-color: red;
+  
+    border-radius: 8px;
+    box-shadow: 0 6px
+}
+
+#texto-encriptado{
+    width: 700px
+}
+/* Encriptador - 1 Desktop */
+
+
+
