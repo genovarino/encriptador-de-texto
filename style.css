@@ -1,7 +1,30 @@
+.logo-animation {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background-color: transparent;
+    animation: logo-animation 2s infinite;
+  }
+  
+  @keyframes logo-animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
 .entrada, .salida {
     padding-top: 20%;
 }
+.btnEncriptar:hover, .btnDesencriptar:hover {
+    background-color: darkblue;
+    cursor: pointer;
+  }
 
 @media (max-width:600px) {
    
@@ -33,6 +56,8 @@
         font-size: 1em;
        
     }
+
+   
 
     #texto-encriptado{
         font-size: 0.7em;
