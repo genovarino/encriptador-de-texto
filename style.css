@@ -47,14 +47,18 @@
         height: 50%;
         background-color: transparent;
         border: none;
+        margin-top: 90px;
     }
 
     .btnEncriptar, .btnDesencriptar{
 
-        color: rgb(255, 255, 255);
-        background-color: black;
-        font-size: 1em;
-       
+        color: white;
+        background-color: rgb(27, 10, 152);
+        font-size: 1.3em;
+        padding: 0.5em;
+        border: none;
+        border-radius: 20px;
+        margin-top: 100px;
     }
 
    
