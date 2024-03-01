@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>Encriptador de Texto</title>
 </head>
 
@@ -15,19 +15,20 @@
 
         <section class="entrada">
 
-            <textarea id="texto-encriptado" class="campo-texto" placeholder="Texto a Encriptar"></textarea>
+            <textarea id="texto-a-encriptar" class="campo-texto" placeholder="Aquí escribe tu texto a encriptar.No Utilizes acentos, las mayúsculas se convertirán a minúsculas"></textarea>
 
                 <div class="btn">
                     <button class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
-                    <button class="btnDesencriptar">Desencriptar</button>
                 </div>
 
         </section>
 
         <section class="salida">
 
-            <textarea id="campo-mensaje" class="mensaje" placeholder="resultado"></textarea>
-        
+            <textarea id="texto-encriptado" class="mensaje"  placeholder="Aqui veras el texto encriptado"></textarea>
+                <div class="btn">
+                    <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
         </section>
     </main>
     <script src="script.js"></script>
