@@ -4,9 +4,9 @@
     left: 5%;
     background-color: transparent;
     animation: logo-animation 2s infinite;
-  }
+}
   
-  @keyframes logo-animation {
+@keyframes logo-animation {
     0% {
       transform: scale(1);
     }
@@ -16,103 +16,103 @@
     100% {
       transform: scale(1);
     }
-  }
+}
 
 .entrada, .salida {
     padding-top: 20%;
 }
 .btnEncriptar:hover, .btnDesencriptar:hover {
-    background-color: darkblue;
+    background-color: rgb(221, 15, 15);
     cursor: pointer;
-  }
+}
 
 @media (max-width:600px) {
    
-    .main {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        height: 100vh;
-        background-color: rgb(176, 176, 242);
-        justify-content: center;            
-    }
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(176, 176, 242);
+    justify-content: center;            
+  }
 
-    #texto-a-encriptar{
-        font-size: 20px;
-        font-weight: bold;
-        color: blue;
-        text-align: center;
-        width: 90%;
-        height: 50%;
-        background-color: transparent;
-        border: none;
-        margin-top: 90px;
-    }
+  #texto-a-encriptar{
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+    width: 90%;
+    height: 50%;
+    background-color: transparent;
+    border: none;
+    margin-top: 90px;
+  }
 
-    .btnEncriptar, .btnDesencriptar{
-
-        color: white;
-        background-color: rgb(27, 10, 152);
-        font-size: 1.3em;
-        padding: 0.5em;
-        border: none;
-        border-radius: 20px;
-        margin-top: 100px;
-    }
+  .btnEncriptar, .btnDesencriptar{
+    color: white;
+    background-color: rgb(27, 10, 152);
+    font-size: 1em;
+    padding: 0.5em;
+    border: none;
+    border-radius: 20px;
+  }
 
    
 
-    #texto-encriptado{
-        font-size: 0.7em;
-        font-weight: bold;
-        color: rgb(240, 9, 9);
-        text-align: center;
-        width: 90%;
-        height: 50%;
-        background-color: transparent;
-        border: none;
-    }
+  #texto-encriptado{
+    font-size: 0.7em;
+    font-weight: bold;
+    color: rgb(240, 9, 9);
+    text-align: center;
+    width: 90%;
+    height: 50%;
+    background-color: transparent;
+    border: none;
+  }
 
 
-    .entrada {
-        -webkit-box-flex: 0.5; /*compatibilidad  con safari*/
-        -ms-flex: 0.5; /*compatibilidad  ms ie y edge*/
-        flex: 0.5; /*compatibilidad  chrome firefox opera*/ 
-        background-color:  #c1bcbc;
-        /*border: 2px solid rgb(176, 176, 242);
-        border-radius: 1em 2em 1em 2em;*/
-        height: 50%;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size:  25px;
-        text-align: center;
-        
-    }
-    .salida{
-        -webkit-box-flex: 0.5;
-        -ms-flex: 0.5;
-        flex: 0.5;
-        background-color: lightgray;
-        margin-top: 1%;
-        /*border: 2px solid rgb(176, 176, 242);
-        border-radius: 2em 1em 2em 1em;*/
-        height: 50%;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size:  25px;
-        text-align: center;
-    }
+  .entrada {
+    -webkit-box-flex: 0.5; /*compatibilidad  con safari*/
+    -ms-flex: 0.5; /*compatibilidad  ms ie y edge*/
+    flex: 0.5; /*compatibilidad  chrome firefox opera*/ 
+    background-color:  #c1bcbc;
+    /*border: 2px solid rgb(176, 176, 242);
+    border-radius: 1em 2em 1em 2em;*/
+    height: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:  25px;
+    text-align: center;
+      
+  }
+   
+  .salida{
+    -webkit-box-flex: 0.5;
+    -ms-flex: 0.5;
+    flex: 0.5;
+    background-color: lightgray;
+    margin-top: 1%;
+    /*border: 2px solid rgb(176, 176, 242);
+    border-radius: 2em 1em 2em 1em;*/
+    height: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:  25px;
+    text-align: center;
+  }
 }
 
 @media (min-width:601px) {
-.main {
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
-background-color: rgb(172, 172, 169);
-height: auto;
-}
+    
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: rgb(172, 172, 169);
+    height: auto;
+  }
 
-#texto-a-encriptar{
+  #texto-a-encriptar{
     font-size: 0.7em;
     font-weight: bold;
     color: blue;
@@ -122,9 +122,9 @@ height: auto;
     background-color: transparent;
     border: none;
 
-}
+  }
 
-.btnEncriptar, .btnDesencriptar{
+  .btnEncriptar, .btnDesencriptar{
 
     color: rgb(255, 255, 255);
     background-color: rgb(52, 8, 249);
@@ -134,10 +134,9 @@ height: auto;
     border-radius: 20px;
     margin-top: 100px;
 
+  }
 
-}
-
-#texto-encriptado{
+  #texto-encriptado{
     font-size: 0.7em;
     font-weight: bold;
     color: rgb(240, 9, 9);
@@ -147,33 +146,33 @@ height: auto;
     background-color: transparent;
     border: none;
    
-    }
+  }
 
-.entrada{
--webkit-box-flex: 0.7;
--ms-flex: 0.7;
-flex: 0.7;
-/*height: 740px;*/
-background-color: rgb(226, 224, 223);
-border: 5px solid rgb(179, 179, 177);
-border-radius: 50px;
-color: rgb(44, 44, 133);
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size:  40px;
-text-align: center;
+  .entrada{
+    -webkit-box-flex: 0.7;
+    -ms-flex: 0.7;
+    flex: 0.7;
+    /*height: 740px;*/
+    background-color: rgb(226, 224, 223);
+    border: 5px solid rgb(179, 179, 177);
+    border-radius: 50px;
+    color: rgb(44, 44, 133);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:  40px;
+    text-align: center;
+  }
 
-}
-.salida{
--webkit-box-flex: 0.3;
--ms-flex: 0.3;
-flex: 0.3;
-height: 400px;
-background-color: rgb(226, 224, 223);
-border: 5px solid rgb(179, 179, 177);
-border-radius: 50px;
-color: rgb(4, 65, 7);
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size:  40px;
-text-align: center;
-}
+  .salida{
+    -webkit-box-flex: 0.3;
+    -ms-flex: 0.3;
+    flex: 0.3;
+    height: 400px;
+    background-color: rgb(226, 224, 223);
+    border: 5px solid rgb(179, 179, 177);
+    border-radius: 50px;
+    color: rgb(4, 65, 7);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:  40px;
+    text-align: center;
+  }
 }
