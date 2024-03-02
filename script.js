@@ -6,11 +6,12 @@ const campo_encriptado = document.querySelector("#texto-encriptado");
 
 //definimos el arreglo que se ocupara de relacionar la posicion 0 y 1 de todos los indices
 const matriz_code = [
-    ["e","enter"],   //indice 0
-    ["i","imes"],    //indice 1
-    ["a","ai"],      //indice 2
-    ["o","ober"],    //indice 3
-    ["u","ufat"],    //indice 4
+    ["ames","m3ll1"],//indice 0
+    ["e","enter"],   //indice 1
+    ["i","imes"],    //indice 2
+    ["a","ai"],      //indice 3
+    ["o","ober"],    //indice 4
+    ["u","ufat"],    //indice 5
 ];
 
 // declaramos una funcion que captura el evento del boton "encriptar"
@@ -30,6 +31,7 @@ function encriptarTexto(fraseEncriptada){
             );
         }
     }
+    
     campo_entrada.value=""; //borramos el campo de entrada
     return fraseEncriptada; //devolvemos la variable  con el texto encriptado
     
