@@ -10,10 +10,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vh;
-  height: 100vh;
+  max-width: 100vh;
+  max-height: 100vh;
   z-index: -1;
   opacity: 0.6;
+  display: inline-block;
 }
 
 /* Texto que aprece en fadedIn */
@@ -204,7 +205,7 @@
     background-color:#c1bcbc;
     border-radius: 40px;
     border: none;
-    margin-top: 100px;
+    margin-top: 60px;
     padding: 0.5em;
   }
 
@@ -216,7 +217,7 @@
     padding: 0.5em;
     border: none;
     border-radius: 20px;
-    margin-top: 100px;
+    margin-top: 5%;
     align-self: center;
 
   }
@@ -233,7 +234,7 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 
