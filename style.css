@@ -2,7 +2,6 @@
     position: absolute;
     top: 5%;
     left: 5%;
-    background-color: transparent;
     animation: logo-animation 2s infinite;
 }
   
@@ -11,20 +10,26 @@
       transform: scale(1);
     }
     50% {
-      transform: scale(1.2);
+      transform: scale(1.4);
     }
     100% {
       transform: scale(1);
     }
 }
 
-.entrada, .salida {
-    padding-top: 20%;
+.entrada {
+    padding-top: 10%;
 }
-.btnEncriptar:hover, .btnDesencriptar:hover {
-    background-color: rgb(221, 15, 15);
-    cursor: pointer;
+
+.salida {
+    padding-top: 0% !important;
+    text-align: center;
+    font-size: 3em;
+    line-height: normal;
+    
 }
+
+
 
 @media (max-width:600px) {
    
@@ -35,7 +40,7 @@
     flex-direction: column;
     height: 100vh;
     background-color: rgb(176, 176, 242);
-    justify-content: center;            
+    justify-content: center;          
   }
 
   #texto-a-encriptar{
@@ -57,6 +62,9 @@
     padding: 0.5em;
     border: none;
     border-radius: 20px;
+    margin-top: 20px;
+    align-self: center;
+  
   }
 
    
@@ -74,19 +82,24 @@
 
 
   .entrada {
-    -webkit-box-flex: 0.5; /*compatibilidad  con safari*/
-    -ms-flex: 0.5; /*compatibilidad  ms ie y edge*/
-    flex: 0.5; /*compatibilidad  chrome firefox opera*/ 
-    background-color:  #c1bcbc;
-    /*border: 2px solid rgb(176, 176, 242);
-    border-radius: 1em 2em 1em 2em;*/
+    background-color: #c1bcbc;
     height: 50%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:  25px;
     text-align: center;
       
   }
-   
+
+  .entrada-container{
+    height: 80%;
+  }
+  
+  .munieco {
+    max-width: 200px; /* Prevent the image from exceeding its original size (200px) */
+  }
+
+  .salida-container{
+    height: 40% ;
+  }
+
   .salida{
     -webkit-box-flex: 0.5;
     -ms-flex: 0.5;
@@ -95,7 +108,7 @@
     margin-top: 1%;
     /*border: 2px solid rgb(176, 176, 242);
     border-radius: 2em 1em 2em 1em;*/
-    height: 50%;
+    height: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:  25px;
     text-align: center;
@@ -109,43 +122,54 @@
     display: -ms-flexbox;
     display: flex;
     background-color: rgb(172, 172, 169);
-    height: auto;
-  }
+    height: 100vh; /* This will make the .main element take up the entire viewport height */
+    width: 100%; /* This will make the .main element take up the entire viewport width */
 
   #texto-a-encriptar{
     font-size: 0.7em;
     font-weight: bold;
     color: blue;
     text-align: center;
-    width: 70%;
-    height: 50%;
+    width: 85%;
+    height: 70%;
     background-color: transparent;
     border: none;
-
+    margin-top: 100px;
   }
 
   .btnEncriptar, .btnDesencriptar{
 
     color: rgb(255, 255, 255);
-    background-color: rgb(52, 8, 249);
-    font-size: 0.8em;
+    background-color: rgb(86, 84, 98);
+    font-size: 0.5em;
     padding: 0.5em;
     border: none;
     border-radius: 20px;
-    margin-top: 100px;
+   /* margin-top: 30px;*/
+    align-self: center;
 
   }
+
+  .btnEncriptar:hover, .btnDesencriptar:hover {
+    background-color: rgb(3, 111, 30);
+    cursor: pointer;
+    transform: scale(1.1) translateY(-4px);
+  /* box-shadow: rgba(0, 0, 0, 0.8) 0px 7px 18px/0px, rgba(0,  0, 0, 0.9) -7px -7px 18px/0px;*/
+}
 
   #texto-encriptado{
     font-size: 0.7em;
     font-weight: bold;
     color: rgb(240, 9, 9);
     text-align: center;
-    width: 90%;
-    height: 50%;
     background-color: transparent;
     border: none;
    
+  }
+
+  .mensaje{
+    width: 90%;
+    height: 70%;
   }
 
   .entrada{
@@ -162,11 +186,19 @@
     text-align: center;
   }
 
+  .salida-container{
+    height: 70% ;
+  }
+
+  .entrada-container{
+    height: 450px;
+  }
+
   .salida{
     -webkit-box-flex: 0.3;
     -ms-flex: 0.3;
     flex: 0.3;
-    height: 400px;
+    /*height: 400px;*/
     background-color: rgb(226, 224, 223);
     border: 5px solid rgb(179, 179, 177);
     border-radius: 50px;
@@ -175,4 +207,5 @@
     font-size:  40px;
     text-align: center;
   }
+}
 }

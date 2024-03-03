@@ -6,7 +6,7 @@ const campo_encriptado = document.querySelector("#texto-encriptado");
 
 //definimos el arreglo que se ocupara de relacionar la posicion 0 y 1 de todos los indices
 const matriz_code = [
-    ["ames","m3ll1"],//indice 0
+    ["ames","m3OL"],//indice 0 
     ["e","enter"],   //indice 1
     ["i","imes"],    //indice 2
     ["a","ai"],      //indice 3
@@ -20,6 +20,7 @@ function btnEncriptar(){
     const texto = encriptarTexto(campo_entrada.value.toLowerCase() );
     //hacemos que el campo 2 recib el valor del texto encriptado
    campo_encriptado.value=texto;
+   
 }
 
 //declaramos una funcion que se encarga de encriptar basada en el arreglo matriz_code

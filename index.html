@@ -2,11 +2,16 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title>Encriptador de Texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+   
 </head>
 
 <body>
@@ -14,24 +19,36 @@
     <main class="main">
 
         <section class="entrada">
-            <div class="logo">
-                <img src="Imagenes/Logo.png" alt="Logo Alura" class="logo-animation">
+            
+            <div class="entrada-container">
+
+                <div class="logo">
+                    <img src="Imagenes/Logo.png" alt="Logo Alura" class="logo-animation">
+                </div>
+
+                <textarea id="texto-a-encriptar" class="campo-texto" placeholder="Aquí escribe tu texto a encriptar.No Utilizes acentos, las mayúsculas se convertirán a minúsculas"></textarea>
+            
             </div>
 
-            <textarea id="texto-a-encriptar" class="campo-texto" placeholder="Aquí escribe tu texto a encriptar.No Utilizes acentos, las mayúsculas se convertirán a minúsculas"></textarea>
-
-                <div class="btn">
-                    <button class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
-                </div>
+            <div class="btn">
+                <button class="btnEncriptar" id="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button  class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
 
         </section>
 
         <section class="salida">
-
-            <textarea id="texto-encriptado" class="mensaje"  placeholder="Aqui veras el texto encriptado"></textarea>
-                <div class="btn">
-                    <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            
+            <div class="salida-container">
+                
+                <div class="munieco">
+                    <img src="Imagenes/Muñeco.png" alt="imagen Muñeco" class="munieco">
                 </div>
+
+                <textarea id="texto-encriptado" class="mensaje"  placeholder="Aqui veras el texto encriptado"></textarea>
+            
+            </div>
+          
         </section>
     </main>
     <script src="script.js"></script>
