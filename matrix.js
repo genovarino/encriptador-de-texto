@@ -29,7 +29,7 @@ class Matrix {
         this.valor = arrayCaracteres[Math.floor(Math.random() * (arrayCaracteres.length - 1))].toUpperCase() // Asigna un valor aleatorio de un carácter de "arrayCaracteres" en mayúscula
         this.velocidad = Math.random() * fontSize * 3 / 4 + fontSize * 3 / 4 // Asigna un valor aleatorio que será usado para mover la posición vertical del texto.
 
-        ctx.fillStyle = "rgba(0,255,0)" // Establece el color de relleno de la fuente en verde
+        ctx.fillStyle = "rgba(200,200,0)" // Establece el color de relleno de la fuente en verde
         ctx.font = fontSize + "px comic-sans" // Establece el tamaño y tipo de fuente como "comic-sans" con tamaño 18px
         ctx.fillText(this.valor, this.x, this.y) // Dibuja el texto con las propiedades previamente establecidas en las coordenadas (x, y)
 
