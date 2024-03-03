@@ -1,3 +1,4 @@
+/*posicionando el logo*/
 .logo-animation {
     position: absolute;
     top: .2vh;
@@ -5,9 +6,9 @@
     animation: logo-animation 5s infinite;
   
   }
-  
-.efecto-matrix {
-
+ 
+  /*estilo para el efecto matrix*/
+  .efecto-matrix {
   position: absolute;
   top: 0;
   left: 0;
@@ -15,27 +16,13 @@
   max-height: 100vh;
   z-index: -1;
   opacity: 0.2;
- /* display: inline-block;*/
+ 
 }
-
-/* Texto que aprece en fadedIn */
-
-/*@keyframes fadeIn {
-  0% {
-      opacity: 0;
-  }
-
-  100% {
-      opacity: 0.1;
-  }
-}*/
-
 
 /* Canvas en el que se dibuja el fondo */
 #canvas {
   position: absolute;
-  z-index: -1;
-  /* Agrega un nivel de profundidad inferior que el que tiene el texto */
+  z-index: -1; /* Agrega un nivel de profundidad inferior que el que tiene el texto */
 }
 
 
@@ -50,9 +37,9 @@
   color: rgb(0, 0, 0);
   text-decoration: none;
   white-space: pre;
-  text-shadow: 0 0 10px rgb(0, 94, 23), 0 0 20px rgba(0, 94, 23),
-      0 0 30px rgba(0, 94, 23), 0 0 40px #011d00, 0 0 70px #011d00,
-      0 0 80px #011d00, 0 0 100px #001d05;
+  text-shadow: 0 0 10px rgb(86, 94, 0), 0 0 20px rgb(91, 94, 0),
+      0 0 30px rgb(85, 94, 0), 0 0 40px #181d00, 0 0 70px #191d00,
+      0 0 80px #1d1d00, 0 0 100px #1b1d00;
   -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -61,12 +48,14 @@
   opacity: 0.5;
 }
 
+/*efecto hover en titulo*/
 .titulo:hover {
   text-shadow: 0 0 10px rgb(0, 34, 7), 0 0 20px rgba(0, 34, 7),
       0 0 30px rgba(0, 34, 7), 0 0 40px #000000, 0 0 70px #000000,
       0 0 80px #000000, 0 0 100px #000000;
 }
 
+/*animacion del logo*/
 @keyframes logo-animation {
     0% {
       transform: scale(0.1);
@@ -79,12 +68,13 @@
     }
 }
 
+/*estilo del campo entrada*/
 .entrada {
     padding-top: 10%;
 }
 
+/*estilo campo salida*/
 .salida {
-   /* padding-top: 0% !important;*/
     text-align: center;
     font-size: 3em;
     line-height: normal;
@@ -92,10 +82,8 @@
 }
 
 
-
+/*configuracion para pantallas pequeñas*/
 @media (max-width:600px) {
-
- 
    
   .main {
     -webkit-box-orient: vertical;
@@ -106,7 +94,7 @@
     background-color: transparent;
     justify-content: center;          
   }
-
+/*estilo de cuadro de texto de entrada*/
   #texto-a-encriptar{
     font-size: 20px;
     font-weight: bold;
@@ -121,6 +109,7 @@
     border-radius: 20px;
   }
 
+  /*estilo de botones*/
   .btnEncriptar, .btnDesencriptar{
     color: white;
     background-color: rgb(27, 10, 152);
@@ -133,8 +122,7 @@
   
   }
 
-   
-
+  /*estilo de cuadro de texto de salida(encriptado)*/ 
   #texto-encriptado{
     font-size: 0.7em;
     font-weight: bold;
@@ -146,41 +134,42 @@
     border: none;
   }
 
-
+  /*estilo cuadro entrada para pantallas pequeñas*/
   .entrada {
     position: relative;
     background-color: transparent;
     height: 50%;
     text-align: center;
-   
-      
   }
 
+  /*estilo efecto matrix pantalla pequeña*/
   .efecto-matrix{
     height: 10%;
     display: flex;
   }
 
+  /*estilo contenedor entrada pantalla pequeña*/
   .entrada-container{
     height: 80%;
   }
   
+  /*estilo imagen  en el contendor de salida*/
   .munieco {
     max-width: 200px; /* Prevent the image from exceeding its original size (200px) */
   }
 
+  /*estilo del contenedor de salida*/
   .salida-container{
     height: 40% ;
   }
 
+  /*estilo del campo salida*/
   .salida{
     -webkit-box-flex: 0.5;
     -ms-flex: 0.5;
     flex: 0.5;
     background-color: lightgray;
     margin-top: 1%;
-    /*border: 2px solid rgb(176, 176, 242);
-    border-radius: 2em 1em 2em 1em;*/
     height: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:  25px;
@@ -188,6 +177,8 @@
   }
 }
 
+
+/*estilo de salida para pantallas mayores a 600px*/
 @media (min-width:601px) {
     
   .main {
