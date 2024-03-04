@@ -30,7 +30,7 @@
   max-width: 100vh;
   max-height: 100vh;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.9;
   border-radius: 20px;
  
 }
@@ -44,13 +44,13 @@
 
 /*Título*/
 .titulo {
-  display: inline-block;
+ 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: none;
   font: normal 1.5em / normal "Sans-Serif", Helvetica, Comic Sans MS;
-  color: rgb(0, 0, 0);
+  color: rgb(157,235,121);
   text-decoration: none;
   white-space: pre;
   text-shadow: 0 0 10px rgb(86, 94, 0), 0 0 20px rgb(91, 94, 0),
@@ -73,7 +73,7 @@
 
 /*estilo del campo entrada*/
 .entrada {
-    padding-top: 10%;
+    padding-top: 0%;
 }
 
 /*estilo campo salida*/
@@ -84,19 +84,35 @@
     
 }
 
+footer{
+  text-align: center;
+  justify-content: center;  
+  margin-top: 2px;
+  color: aliceblue;
+  background-color: rgb(0, 0, 0);
+  font-size: 0.8em;
+  height: 4vh;
+}
+  
 
 /*configuracion para pantallas pequeñas*/
 @media (max-width:600px) {
-   
+
+
   .main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    height: 100vh;
+    height: 92vh;
     background-color: transparent;
     justify-content: center;          
   }
+  .titulo{
+    margin-top: 15px;
+    float: right;
+   }
+ 
   /*estilo de cuadro de texto de entrada*/
   #texto-a-encriptar{
     font-size: 15px;
@@ -108,7 +124,7 @@
     background-color: white;
     border: none;
     margin-top: 90px;
-    opacity: 0.4;
+    opacity: 0.8;
     border-radius: 20px;
   }
 
@@ -132,9 +148,10 @@
     color: rgb(240, 9, 9);
     text-align: center;
     width: 90%;
-    height: 50%;
+    height: 15vh;
     background-color: transparent;
     border: none;
+    border-radius: 15px;
   }
 
   /*estilo cuadro entrada para pantallas pequeñas*/
@@ -158,12 +175,13 @@
   
   /*estilo imagen  en el contendor de salida*/
   .munieco {
+    float: right;
     max-width: 200px; /* Prevent the image from exceeding its original size (200px) */
   }
 
   /*estilo del contenedor de salida*/
   .salida-container{
-    height: 40% ;
+    height: 50%;
   }
 
   /*estilo del campo salida*/
@@ -190,9 +208,15 @@
     display: -ms-flexbox;
     display: flex;
     background-color:transparent;
-    height: 100vh; /* This will make the .main element take up the entire viewport height */
+    height:92vh; /* This will make the .main element take up the entire viewport height */
     width: 100%; /* This will make the .main element take up the entire viewport width */
   }
+
+  .titulo{
+    float: right;
+    margin-top: 40px;
+  }
+
   /*estilo  del contenedor de entrada*/
     #texto-a-encriptar{
     font-size: 0.7em;
@@ -204,7 +228,7 @@
     background-color:#c1bcbc;
     border-radius: 40px;
     border: none;
-    margin-top: 60px;
+    margin-top: 140px;
     padding: 0.5em;
   }
 
@@ -217,7 +241,7 @@
     padding: 0.5em;
     border: none;
     border-radius: 20px;
-    margin-top: 5%;
+    margin-top: 150px;
     align-self: center;
   }
 

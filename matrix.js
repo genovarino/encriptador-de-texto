@@ -5,15 +5,15 @@ canvas.width = window.innerWidth; // Establece el ancho del canvas en la anchura
 canvas.height = window.innerHeight; // Establece la altura del canvas en la altura de la ventana del navegador
 
 const arrayCaracteres = [
-    "a", "b", "c", "d", "e", "f", "g", "h", "i", "j",
+    "A", "B", "C", "D", "E", "F", "G", "h", "i", "j",
     "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s",
     "t", "u", "v", "w", "x", "y", "z", "£", "¥", "§",
     "¤","€","$","±","µ","Ø","×","≥","Æ","☠"
 ]; // Matriz de caracteres que serán utilizados en la animación
 
 const codigoArray = []; // Matriz vacía para almacenar objetos 
-const conteoCodigo = 100; // Constante que representa la cantidad de objetos "Matrix" que se crearán
-const fontSize = 24; // Tamaño de la fuente para lo caracteres
+const conteoCodigo = 90; // Constante que representa la cantidad de objetos "Matrix" que se crearán
+const fontSize = 16; // Tamaño de la fuente para lo caracteres
 const numeroColumna = canvas.width / fontSize; // Constante que representa el número de columnas que caben en el canvas basándose en el tamaño de la fuente
 let frame = 0; // Variable para contar el número de frames en la animación
 
@@ -27,9 +27,9 @@ class Matrix {
     dibujar(ctx) {
 
         this.valor = arrayCaracteres[Math.floor(Math.random() * (arrayCaracteres.length - 1))].toUpperCase() // Asigna un valor aleatorio de un carácter de "arrayCaracteres" en mayúscula
-        this.velocidad = Math.random() * fontSize * 3 / 4 + fontSize * 3 / 4 // Asigna un valor aleatorio que será usado para mover la posición vertical del texto.
+        this.velocidad = Math.random() * fontSize * 1/2 + fontSize * 1/2 // Asigna un valor aleatorio que será usado para mover la posición vertical del texto.
 
-        ctx.fillStyle = "rgba(200,200,0)" // Establece el color de relleno de la fuente en verde
+        ctx.fillStyle = "rgba(0,255,0)" // Establece el color de relleno de la fuente en verde
         ctx.font = fontSize + "px comic-sans" // Establece el tamaño y tipo de fuente como "comic-sans" con tamaño 18px
         ctx.fillText(this.valor, this.x, this.y) // Dibuja el texto con las propiedades previamente establecidas en las coordenadas (x, y)
 

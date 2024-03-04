@@ -21,31 +21,18 @@
         <section class="entrada">
 
             <div class="efecto-matrix">
-                    <canvas id="canvas"></canvas>
-                    <script src="matrix.js"></script>
-                    <!-- Función para hacer aparecer el texto -->
-                    <script>
-                        window.onload = function() {
-                        setTimeout(function() {
-                            document.getElementById("texto").style.display = "block";
-                        }, 6000);
-                        };
-                    </script>
+                <canvas id="canvas"></canvas>
+                <script src="matrix.js"></script>
             </div>        
                 
 
             <div class="entrada-container">
+                <h1 id="texto" class="titulo">Encriptador de texto</h1>
+                    <div class="logo">
+                        <img src="Imagenes/Logo-blanco.png" alt="Logo Alura" class="logo-animation">
+                    </div>
             
-
-                <div id="texto" class="titulo">Encriptador de texto</div>
-
-                        <div class="logo">
-                            <img src="Imagenes/Logo-blanco.png" alt="Logo Alura" class="logo-animation">
-                        </div>
-            
-                <textarea id="texto-a-encriptar" class="campo-texto" placeholder="Aquí escribe tu texto a encriptar. Las mayúsculas se convertirán a minúsculas. &#10 &#10 Para reiniciar el encriptador puedes presionar culaquier botón dos veces."></textarea>
-
-            
+                    <textarea id="texto-a-encriptar" class="campo-texto" placeholder="Aquí escribe tu texto a encriptar. Las mayúsculas se convertirán a minúsculas. &#10 &#10 Para reiniciar el encriptador puedes presionar culaquier botón dos veces."></textarea>
             </div>
         
             <div class="btn">
@@ -76,4 +63,7 @@
 
 
 </body>
+<footer>
+    <p class="copyright">&copy Copyright Encriptador de Texto by Gabriel Novarino - 2024</p>
+</footer>
 </html>

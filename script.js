@@ -6,13 +6,23 @@ const campo_encriptado = document.querySelector("#texto-encriptado");
 
 //definimos el arreglo que se ocupara de relacionar la posicion 0 y 1 de todos los indices
 const matriz_code = [
-    ["ames","m3OL"],//indice 0 
-    ["e","enter"],   //indice 1
-    ["i","imes"],    //indice 2
-    ["a","ai"],      //indice 3
+    ["ames","b3mq"],
+    ["e","enter"],   //indice 2 
+    ["i","imes"],    //indice 1
+    ["a","ai"],      //indice 3  
     ["o","ober"],    //indice 4
     ["u","ufat"],    //indice 5
 ];
+
+//borramos el placeholder de textarea al hacer clic en el
+const textArea = document.getElementById("texto-a-encriptar");
+
+textArea.addEventListener("focus", function() {
+  textArea.value = "", 
+  textArea.placeholder = "";
+});
+
+
 
 // declaramos una funcion que captura el evento del boton "encriptar"
 function btnEncriptar(){
@@ -20,7 +30,9 @@ function btnEncriptar(){
     const texto = encriptarTexto(campo_entrada.value.toLowerCase() );
     //hacemos que el campo 2 recib el valor del texto encriptado
    campo_encriptado.value=texto;
-   
+   //devolvemos el placeholder al campo entrada
+   document.getElementById("texto-a-encriptar").placeholder = "Aquí escribe tu texto a encriptar. Las mayúsculas se convertirán a minúsculas.                                       Para reiniciar el encriptador puedes presionar culaquier botón dos veces.";
+
 }
 
 //declaramos una funcion que se encarga de encriptar basada en el arreglo matriz_code
