@@ -13,7 +13,7 @@ const arrayCaracteres = [
 
 const codigoArray = []; // Matriz vacía para almacenar objetos 
 const conteoCodigo = 100; // Constante que representa la cantidad de objetos "Matrix" que se crearán
-const fontSize = 18; // Tamaño de la fuente para lo caracteres
+const fontSize = 24; // Tamaño de la fuente para lo caracteres
 const numeroColumna = canvas.width / fontSize; // Constante que representa el número de columnas que caben en el canvas basándose en el tamaño de la fuente
 let frame = 0; // Variable para contar el número de frames en la animación
 
