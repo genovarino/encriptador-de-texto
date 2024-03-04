@@ -1,10 +1,3 @@
-.main{
-font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
-font-weight: 300;
-font-style: normal;
-}
-
 /*animacion del logo*/
 @keyframes logo-animation {
   0% {
@@ -18,16 +11,14 @@ font-style: normal;
   }
 }
 
-.logo{
-  max-height: 10%;
-}
-
+/*posicionando el logo*/
 .logo-animation {
+    position: absolute;
+    top: .2vh;
+    left: .2vh;
+    animation: logo-animation 5s infinite;
   
-   animation: logo-animation 8s infinite;
-  
-  
-}
+  }
  
   /*estilo para el efecto matrix*/
   .efecto-matrix {
@@ -39,7 +30,7 @@ font-style: normal;
   max-width: 100vh;
   max-height: 100vh;
   z-index: -1;
-  opacity: 0.6;
+  opacity: 0.4;
   border-radius: 20px;
  
 }
@@ -58,19 +49,19 @@ font-style: normal;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: none;
-  /*font: normal 1.5em / normal "Sans-Serif", Helvetica, Comic Sans MS;*/
+  font: normal 1.5em / normal "Sans-Serif", Helvetica, Comic Sans MS;
   color: rgb(0, 0, 0);
   text-decoration: none;
   white-space: pre;
-  text-shadow: 0 0 10px rgb(86, 94, 0), 0 0 20px rgb(91, 94, 0);
-  font-family: "Montserrat", sans-serif;
+  text-shadow: 0 0 10px rgb(86, 94, 0), 0 0 20px rgb(91, 94, 0),
+      0 0 30px rgb(85, 94, 0), 0 0 40px #181d00, 0 0 70px #191d00,
+      0 0 80px #1d1d00, 0 0 100px #1b1d00;
   -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   width: 100%;
-  margin-top: 20px;
-  opacity: 0.9;
+  opacity: 0.5;
 }
 
 /*efecto hover en titulo*/
@@ -82,7 +73,7 @@ font-style: normal;
 
 /*estilo del campo entrada*/
 .entrada {
-    display: flexbox;
+    padding-top: 10%;
 }
 
 /*estilo campo salida*/
@@ -116,7 +107,7 @@ font-style: normal;
     height: 50%;
     background-color: white;
     border: none;
-    margin-top: 0%;
+    margin-top: 90px;
     opacity: 0.4;
     border-radius: 20px;
   }
@@ -129,7 +120,7 @@ font-style: normal;
     padding: 0.5em;
     border: none;
     border-radius: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     align-self: center;
   
   }
@@ -160,10 +151,10 @@ font-style: normal;
     display: flex;
   }
 
-  /*estilo contenedor entrada pantalla pequeña
+  /*estilo contenedor entrada pantalla pequeña*/
   .entrada-container{
     height: 80%;
-  }*/
+  }
   
   /*estilo imagen  en el contendor de salida*/
   .munieco {
@@ -209,10 +200,11 @@ font-style: normal;
     color: blue;
     text-align: center;
     width: 85%;
-    height: 60%;
+    height: 70%;
     background-color:#c1bcbc;
     border-radius: 40px;
     border: none;
+    margin-top: 60px;
     padding: 0.5em;
   }
 
@@ -231,7 +223,7 @@ font-style: normal;
 
   /*comportamiento botones en pantalla grande*/
   .btnEncriptar:hover, .btnDesencriptar:hover {
-    background-color: rgb(21, 3, 111);
+    background-color: rgb(3, 111, 30);
     cursor: pointer;
     transform: scale(1.1) translateY(-4px);
   /* box-shadow: rgba(0, 0, 0, 0.8) 0px 7px 18px/0px, rgba(0,  0, 0, 0.9) -7px -7px 18px/0px;*/
@@ -286,7 +278,7 @@ font-style: normal;
 
   /*estilo de contenedor de entrada en pantalla grande*/
   .entrada-container{
-    height: 80%;
+    height: 450px;
   }
 
   /*estilo de contenedor salida*/
